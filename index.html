@@ -3,8 +3,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+
+    <!-- Desktop max-width=1280px. iPad/tablets portrait max-width=1024px.
+      Low-resolution iPads/tables max-width=767px. MObile max-width=480px. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <meta name="author" content="Eric Ray O. Saladar">
     <title>Web App- Simple Interest Calculator</title>
+    
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js" defer></script>
       <!-- the defer attribute loads the external script parallel to the html
@@ -19,7 +25,7 @@
       </header>
       <br>
 
-      <div class="inputs-container">
+      <div class="inputs-outputs-container">
         <label for="principal-amount">Amount</label>       
         <input type="number" id="principal-amount" class="principal-amount">
         <br><br>
@@ -45,11 +51,10 @@
         <br><br>
 
         <button class="compute-button">Compute Interest</button>
-      </div>
-      <br><br>
+        <br><br>
 
-      <section></section>
-      <br>
+        <section></section>
+      </div>
 
       <footer>
         © Everyone Can Get Rich<br>

@@ -2,12 +2,8 @@
 body {
   background-color: black;
   font-family: Arial, Helvetica, sans-serif;
-    /*
-    font-family: values are options for fallback
-      in-cases the others are unavailable. Arial, 
-      Helvetica, and Times New Romans and few of
-      the popular options.
-    */
+  margin: 0;
+
   display: flex;
     /* makes the children element flex */
   justify-content: center;
@@ -15,59 +11,52 @@ body {
       horizontal center of the viewport */
 }
 
+/* This block layouts the calculator box. */
 .calculator {
-  background-color: white;
-  width: 500px;
+  width: 480px;
+  min-width: 480px;
   height: auto;
+
+  background-color: white;
   border-radius: 25px;
-  padding: 10px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-h1 {
-  text-align: center;
-  color: gray;
-  font-size: 2.2rem;
-}
+  /* Elements inside the div class='inputs-outputs-container' */
+  h1 {
+    color: gray;
+    font-size: 2.2rem;
+    margin-top: 30px;
+  }
 
-output {
-  background-color: yellow;
-}
+  .principal-amount {
+    margin-left: 38px;
+  }
 
-label, .compute-button, section {
-  margin-left: 95px;
-}
+  .years {
+    margin-left: 7px;
+  }
 
-.principal-amount {
-  position: relative;
-  left: 50px;
-}
+  p{
+    margin: 5px 0;
+  }
 
-.interest-rate, .interest-rate-display {
-  position: relative;
-  left: 10px;
-  background-color: transparent;
-}
+  output {
+    background-color: yellow;
+  }
 
-.years {
-  position: relative;
-  left: 17px;
-}
+  .interest-rate-display {
+    background-color: transparent;
+  }
 
-p {
-  margin: 0px; 
-}
+  footer {
+    margin: 20px 0 30px;
+    width: 435px;
+  }
 
-footer {
-  margin-left: 40px;
-  margin-bottom: 20px;
-}
-
-.owner {
-  background-color: gray;
-}
-
-/*
-Once done with the functionality of the app.
-Prepare a responsive layout to screen sizes &
-a fall back design for older devices.
-*/
+  span {
+    background-color: gray;
+  }
