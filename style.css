@@ -1,0 +1,73 @@
+
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+    /*
+    font-family: values are options for fallback
+      in-cases the others are unavailable. Arial, 
+      Helvetica, and Times New Romans and few of
+      the popular options.
+    */
+  display: flex;
+    /* makes the children element flex */
+  justify-content: center;
+    /* children elements placed at the
+      horizontal center of the viewport */
+}
+
+.calculator {
+  background-color: white;
+  width: 500px;
+  height: auto;
+  border-radius: 25px;
+  padding: 10px 0;
+}
+
+h1 {
+  text-align: center;
+  color: gray;
+  font-size: 2.2rem;
+}
+
+output {
+  background-color: yellow;
+}
+
+label, .compute-button, section {
+  margin-left: 95px;
+}
+
+.principal-amount {
+  position: relative;
+  left: 50px;
+}
+
+.interest-rate, .interest-rate-display {
+  position: relative;
+  left: 10px;
+  background-color: transparent;
+}
+
+.years {
+  position: relative;
+  left: 17px;
+}
+
+p {
+  margin: 0px; 
+}
+
+footer {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.owner {
+  background-color: gray;
+}
+
+/*
+Once done with the functionality of the app.
+Prepare a responsive layout to screen sizes &
+a fall back design for older devices.
+*/
