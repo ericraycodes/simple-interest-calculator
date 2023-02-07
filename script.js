@@ -19,24 +19,13 @@ computeButton.addEventListener('click', validatePrincipalInput);
 
 // Validating the input of the principal amount
 function validatePrincipalInput() {
-    /* 
-    Conditions: if the principal amount is a:
-        (+)positive number, 
-        (-)negative number,
-        (i)invalid-nonnumeric input, or
-        (e)catching other unidentified input errors.
-    */
-
-    console.log(`==== COMPUTATION ====`);
     
     if (parseFloat(principalAmount.value, 10) > 0) {
-
         displayCalculation();
-
     } else {
-        console.log('Negative, Invalid Characters, Empty Input field');
-        console.log(`Principal Input Data type: ${typeof(principalAmount.value)}`);
-        console.log(`Principal amount = '${principalAmount.value}'.`);
+        console.log('ERROR! Invalid Input.');
+        console.log(`Principal Input Data type: '${typeof(principalAmount.value)}'`);
+        console.log(`Principal amount:          '${principalAmount.value}'.`);
 
         alert('Enter a positive number');   
         
@@ -79,9 +68,6 @@ function displayCalculation() {
     para2.appendChild(value2);
     para3.appendChild(value3);
     para4.appendChild(value4);
-
-    console.log(section.innerHTML); // check
-    console.log(section.innerText); // check
 }
 
 
@@ -92,5 +78,3 @@ function calculateFutureAmount() {
 
 // Display the web app owner in the footer
 document.querySelector('.owner').textContent = document.querySelector('meta[name="author"]').content;
-
-

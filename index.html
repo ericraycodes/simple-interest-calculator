@@ -4,8 +4,6 @@
   <head>
     <meta charset="utf-8">
 
-    <!-- Desktop max-width=1280px. iPad/tablets portrait max-width=1024px.
-      Low-resolution iPads/tables max-width=767px. MObile max-width=480px. -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <meta name="author" content="Eric Ray O. Saladar">
@@ -13,54 +11,54 @@
     
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js" defer></script>
-      <!-- the defer attribute loads the external script parallel to the html
-      document and executes the code after(not before all) the DOM is parsed. -->
   </head>
 
   <body>
+    
     <div class="calculator">
+      <div class="case">
 
-      <header>
-        <h1>Simple Interest Calculator</h1>
-      </header>
-      <br>
+        <header><h1>Simple Interest Calculator</h1></header>
+        <br>
 
-      <div class="inputs-outputs-container">
-        <label for="principal-amount">Amount</label>       
-        <input type="number" id="principal-amount" class="principal-amount">
-        <br><br>
+        <div class="inputs-outputs">
+          <label for="principal-amount">Amount</label>       
+          <input type="number" id="principal-amount" class="principal-amount">
+          <br><br>
 
-        <label for="interest-rate">Interest Rate</label>
-        <input type="range" class="interest-rate" min="1" max="20" step="0.25" value="1">
-        <output for="interest-rate" class="interest-rate-display"></output>
-        <br><br>
+          <label for="interest-rate">Interest Rate</label>
+          <input type="range" class="interest-rate" min="1" max="20" step="0.25" value="1">
+          <output for="interest-rate" class="interest-rate-display"></output>
+          <br><br>
 
-        <label for="years">No. of Years</label>
-        <select name="years" class="years" required>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </select>
-        <br><br>
+          <label for="years">No. of Years</label>
+          <select name="years" class="years" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <br><br>
 
-        <button class="compute-button">Compute Interest</button>
-        <br><br>
+          <button class="compute-button">Compute Interest</button>
+          <br><br>
 
-        <section></section>
+          <section></section>
+          <br>
+        </div>
+
+        <footer>
+          © Everyone Can Get Rich<br>
+          This calculator belongs to <span class="owner"></span>.
+        </footer>
+
       </div>
-
-      <footer>
-        © Everyone Can Get Rich<br>
-        This calculator belongs to <span class="owner"></span>.
-      </footer>
-
     </div>
   </body>
 </html>
